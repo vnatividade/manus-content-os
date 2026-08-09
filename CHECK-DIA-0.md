@@ -13,7 +13,7 @@ O rollout é escalonado: pode não estar disponível na sua conta.
 ## 1. Pré-requisitos da conta
 
 - [x] Conta definida e conectada: `@vidavesso`.
-- [ ] A conta é profissional (**business OU creator**) — exigência confirmada pela Meta. <!-- TODO-VITOR: confirmar o tipo (business ou creator) da @vidavesso -->
+- [x] A conta é profissional: **creator** (confirmado pelo Vitor em 09/08/2026) — atende a exigência da Meta (business OU creator).
 - [ ] A conta tem ≥100 seguidores (abaixo disso a API não devolve nem o dado de follower, que é de conta).
 - [ ] Conector **Google Sheets** disponível no Manus (é onde o ledger vive).
 
