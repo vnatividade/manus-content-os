@@ -21,7 +21,7 @@ O rollout é escalonado: pode não estar disponível na sua conta.
 
 - [ ] Criar o Manus Project e colar `project/PROJECT-INSTRUCTION.md` como instrução mestra.
 - [ ] Subir na knowledge base: `VOZ.md`, `PILARES.md`, `FORMATOS.md`, `REGRAS-DURAS.md`, `PADROES.md` (lembrando: atualização de arquivo só vale em task NOVA — não há write-back).
-- [ ] Importar as 5 skills de `skills/` (via GitHub quando o repo for publicado, ou colando o conteúdo manualmente).
+- [ ] Importar as 5 skills de `skills/` — repo: `https://github.com/vnatividade/manus-content-os` (privado; se o import do Manus exigir acesso, autorize você mesmo — OAuth é gate) — ou colando o conteúdo manualmente.
 - [ ] Criar a planilha do ledger com as 6 abas de `ledger/SCHEMA.md` (cabeçalhos exatos de `ledger/csv/`).
 
 ## 3. Gate 0 — o conector fala a verdade? (protocolo)
