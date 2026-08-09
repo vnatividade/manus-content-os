@@ -1,0 +1,8 @@
+{
+  "schemaVersion": "0.1.0",
+  "mode": "exploration",
+  "reason": "POC de 4 semanas do Content OS de Instagram sobre Manus; sem usuários nem dados de clientes no repositório. Agentes iteram no scaffolding, docs, skills e scripts com commit/push autorizados.",
+  "activatedBy": "Vitor Natividade",
+  "activatedAt": "2026-08-09",
+  "notes": "Ativado por instrução explícita do fundador na sessão de 2026-08-09 ('pode criar o repo GitHub privado e fazer o push, deixe o projeto em modo exploration'). Gates absolutos que exploration NÃO cobre (HANDOFF §4): autorizar OAuth, publicar/agendar conteúdo no Instagram ou em qualquer serviço externo, instalar skills Publora, compras/upgrades e impressão de secrets. Trava anti-fabricação de métricas é inviolável em qualquer modo."
+}

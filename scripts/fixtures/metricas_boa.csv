@@ -1,0 +1,5 @@
+id_peca,janela,data_coleta,origem_dado,views,reach,saves,shares,comments,sends_por_reach
+p001,72h,2026-08-05,conector,1200,900,14,9,6,0.0100
+p001,7d,2026-08-09,conector,2100,1500,21,15,9,0.0100
+p002,72h,2026-08-06,app,800,650,7,4,3,0.0062
+p003,72h,2026-08-07,indisponivel,INDISPONIVEL,INDISPONIVEL,INDISPONIVEL,INDISPONIVEL,INDISPONIVEL,INDISPONIVEL
