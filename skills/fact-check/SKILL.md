@@ -1,6 +1,6 @@
 ---
 name: fact-check
-description: Verifica toda afirmação factual, número e citação de uma peça antes do Gate 2. Sem link verificável, o item bloqueia a peça. Meta da POC: erro factual publicado = 0.
+description: "Verifica toda afirmação factual, número e citação de uma peça antes do Gate 2. Sem link verificável, o item bloqueia a peça. Meta da POC — erro factual publicado = 0."
 ---
 
 # Fact-check
