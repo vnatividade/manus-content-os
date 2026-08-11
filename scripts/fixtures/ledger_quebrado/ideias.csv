@@ -1,0 +1,4 @@
+id,data_captura,insumo_bruto,origem,pilar,score_so_eu,score_evidencia,score_tensao,score_utilidade,score_total,status
+i001,2026-08-10,insumo real de teste,nota,IA que vira sistema,4,3,4,4,18,publicada
+i002,2026-08-10,insumo sem origem valida,inventada,Vida como projeto aberto,5,3,3,4,15,brief
+i002,2026-08-10,id duplicado,nota,IA que vira sistema,3,3,3,3,12,capturada

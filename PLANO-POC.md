@@ -15,7 +15,7 @@ Pré-condição: `CHECK-DIA-0.md` completo (conector presente + Gate 0 rodado).
 | Brief + geração (gerar-carrossel / roteiro de reel) | — | skills; 1 task = 1 etapa, sempre |
 | Crítica (anti-generico) + fact-check | — | skills |
 | **Aprovar a cópia** | **Gate 2 (alvo: 90s/peça)** | Vitor |
-| **Publicar** | **Gate 3: manual nas 4 primeiras peças; se erro = 0, pode virar automático na semana 3** | Vitor / conector |
+| **Publicar** | **Gate 3: manual nas 4 primeiras peças; se erro = 0, pode virar automático na semana 3** — caminho acelerado em `AUTOMACAO.md` §1 (1 teste de publicação por formato substitui as 4 peças), pendente de decisão do Vitor | Vitor / conector |
 | Coletar métricas 72h e 7d → ledger | — | conector (ou app, se o Gate 0 reprovou) |
 | Análise (analise-semanal) | — | skill |
 

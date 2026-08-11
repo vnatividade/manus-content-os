@@ -24,10 +24,19 @@ capturar → pontuar (score-editorial) → **Gate 1: você escolhe 3** → brief
 
 ## Scripts de integridade
 
-- `python3 scripts/ledger_lint.py ledger/csv/metricas.csv` — valida o ledger (domínios,
-  `INDISPONIVEL`, nenhuma métrica proibida). Exit 0 = ok.
+- `python3 scripts/ledger_lint.py ledger/csv/metricas.csv` — valida o conteúdo de
+  metricas.csv (domínios, `INDISPONIVEL`, nenhuma métrica proibida). Exit 0 = ok.
+- `python3 scripts/ledger_check.py ledger/csv` — integridade das 6 abas: referências,
+  ids duplicados, `sends_por_reach` coerente, lacuna de coleta. É o smoke do pipeline
+  automatizado — rode a cada ciclo.
 - `python3 scripts/gate0_diff.py --manus manus.csv --app app.csv` — Gate 0: o Manus fala
   a verdade? Exit 1 = divergência ou métrica fabricada.
+
+## Automação
+
+`AUTOMACAO.md` — as 7 Scheduled Tasks do pipeline, o smoke de cada uma (validação em
+horas), o controle negativo do crítico e as 4 ondas. Leia antes de ligar qualquer
+automação.
 
 ## Regras que não se negociam
 
