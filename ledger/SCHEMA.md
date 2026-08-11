@@ -19,7 +19,7 @@ mudar o lint junto.
 `id_brief,id_ideia,pilar,formato,angulo,hook,n_slides,cta,estrutura,data`
 
 - `id_brief`: `b001`, … · `id_ideia` obrigatório (rastreabilidade: sem insumo não há peça)
-- `formato` ∈ {carrossel, reel} na POC · `n_slides`: 2–10 (carrossel) ou vazio (reel)
+- `formato` ∈ {carrossel, reel, post} na POC · `n_slides`: 2–10 (carrossel) ou vazio (reel/post)
 
 ## publicados.csv
 

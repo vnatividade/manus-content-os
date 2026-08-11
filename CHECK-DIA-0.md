@@ -24,19 +24,34 @@ O rollout é escalonado: pode não estar disponível na sua conta.
 - [ ] Importar as 5 skills de `skills/` — repo: `https://github.com/vnatividade/manus-content-os` (privado; se o import do Manus exigir acesso, autorize você mesmo — OAuth é gate) — ou colando o conteúdo manualmente.
 - [ ] Criar a planilha do ledger com as 6 abas de `ledger/SCHEMA.md` (cabeçalhos exatos de `ledger/csv/`).
 
-## 3. Gate 0 — o conector fala a verdade? (protocolo)
+## 3. Gate 0 em camadas — funcionamento em horas, qualidade em 72h
 
-Antes de qualquer peça gerada pelo sistema:
+Combinado de 10/08/2026: **validação de funcionamento nunca espera janela de dado.**
+Defeito de fluxo (formato errado, conector mudo, métrica inventada) tem que aparecer no
+mesmo dia; a janela de 72h só responde se o NÚMERO é estável — não se o sistema funciona.
 
-1. Publique **3 peças manualmente** (você, no app — sem Manus).
-2. Espere **72h**.
-3. Peça ao Manus (via conector) as métricas das 3 peças e exporte para `manus.csv`, no formato `id_peca,metrica,valor`.
-4. Leia as MESMAS métricas **no app do Instagram** e anote em `app.csv` (mesmo formato).
-5. Rode:
+### Teste A — funcionamento (mesmo dia, em horas)
+
+1. **Smoke do pipeline no Manus (~1h, sem publicar):** rode 1 task de cada skill em
+   sequência com um insumo real — score-editorial → brief manual → gerar-carrossel →
+   anti-generico → fact-check. Confira se cada saída vem no formato exato da skill.
+   Saída fora do formato = defeito de fluxo, corrigir antes de seguir.
+2. Publique **3 peças manualmente** (você, no app — sem Manus).
+3. **H+3 (mesmo dia):** peça ao Manus as métricas das 3 peças, exporte para `manus.csv`
+   (`id_peca,metrica,valor`), leia as mesmas no app para `app.csv` e rode:
 
    python3 scripts/gate0_diff.py --manus manus.csv --app app.csv
 
-## 4. Leitura do resultado
+   Números pequenos não importam aqui. O que o Teste A prova: conector lê a conta certa,
+   devolve SÓ as seis métricas, o formato exporta, e o script fecha ponta a ponta.
+   **Métrica fora das seis já reprova aqui** — não precisa esperar 72h para saber isso.
+
+### Teste B — qualidade do dado (D+3, teto do combinado)
+
+4. Em 72h, repita a coleta dupla (`manus.csv` × `app.csv`, janela `72h`) e rode o
+   `gate0_diff.py` de novo. ESTE resultado decide se o ledger confia no conector.
+
+## 4. Leitura do resultado (Teste B)
 
 - **APROVADO (batem)** → o ledger pode confiar no conector. Siga o `PLANO-POC.md`.
 - **REPROVADO por divergência** → coleta manual durante TODA a POC; o conector vira só publicador.

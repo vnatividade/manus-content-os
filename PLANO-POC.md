@@ -45,6 +45,19 @@ própria. Sempre 1 Scheduled Task = 1 etapa; nunca ideação→publicação numa
 - **Métrica-norte: `sends/reach`** (= shares/reach). Likes é o sinal mais fraco. Volume não é estratégia.
 - Dado que o conector não devolver: literal `INDISPONIVEL` no ledger — nunca estimativa.
 
+## Validação × monitoramento (combinado de 10/08/2026)
+
+Duas coisas diferentes, nunca misturadas:
+
+- **Funcionamento de fluxo** (skill nova, etapa nova, automação do Gate 3): prova-se em
+  **horas, teto de 3 dias**, com execução real ponta a ponta em dado pequeno
+  (`CHECK-DIA-0.md` §3, Teste A é o modelo). Nada entra na rotina sem esse smoke.
+- **Performance e objetivo**: monitoramento com cadência fixa —
+  - por peça: coleta 72h e 7d no ledger (com `origem_dado`);
+  - por semana: fechamento com a skill analise-semanal + atualização da tabela de alvos
+    operacionais acima + toque nas hipóteses (`hipoteses.csv`);
+  - semana 4: decisão GO/ADJUST/STOP abaixo, com a tabela completa como evidência.
+
 ## Decisão ao fim das 4 semanas
 
 - **GO** — todos os alvos operacionais + ≥1 hipótese validada ou refutada com dados + custo ≤US$40/mês.
